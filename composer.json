@@ -3,6 +3,13 @@
     "description": "PHP SDK for the MNPY API.",
     "type": "library",
     "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3.0"
+    },
+    "require-dev": {
+        "phpmd/phpmd" : "@stable",
+        "squizlabs/php_codesniffer": "@stable"
+    },
     "autoload": {
         "psr-4": {
             "MNPY\\SDK\\": "src/"
