@@ -1,0 +1,11 @@
+{
+    "name": "mnpy/mnpy-php-api-sdk",
+    "description": "PHP SDK for the MNPY API.",
+    "type": "library",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "MNPY\\SDK\\": "src/"
+        }
+    }
+}
