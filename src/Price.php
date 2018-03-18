@@ -22,19 +22,14 @@ class Price extends Base implements PriceInterface
     }
 
     /**
-     * @param $pair
-     * @param $value
+     * @param string $symbol
      *
      * @return \stdClass
-     *
      * @throws \Exception
      */
-    public function convert($pair, $value)
+    public function get(string $symbol)
     {
-        $request = new Request("get", "price", [
-            "pair"  => $pair,
-            "value" => $value
-        ]);
+        $request = new Request("get", sprintf("price/%s", $symbol));
 
         $response = $this->client->send($request);
 

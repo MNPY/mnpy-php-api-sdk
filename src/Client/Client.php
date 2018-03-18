@@ -24,12 +24,12 @@ class Client
     /**
      * @var string
      */
-    protected $apiEndPoint = "https://api.mnpy.test";
+    protected $apiEndPoint = "https://api.mnpy.io";
 
     /**
      * @var string
      */
-    protected $apiVersion = "v1";
+    protected $apiVersion = "dev";
 
     /**
      * @var array

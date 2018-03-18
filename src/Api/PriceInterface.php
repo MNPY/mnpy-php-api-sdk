@@ -9,12 +9,11 @@ namespace MNPY\SDK\Api;
 interface PriceInterface
 {
     /**
-     * @param $pair
-     * @param $value
-     *
-     * @return \stdClass
+     * @param string $symbol
      *
      * @throws \Exception
+     *
+     * @return \stdClass
      */
-    public function convert($pair, $value);
+    public function get(string $symbol);
 }
